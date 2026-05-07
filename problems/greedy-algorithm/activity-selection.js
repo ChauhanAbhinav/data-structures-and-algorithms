@@ -1,6 +1,4 @@
-// --------------------------
-// 4. Greedy - Activity Selection
-// --------------------------
+// Greedy Algorithm - Activity Selection
 function maxActivities(start, end) {
   let activities = start.map((s,i) => [s,end[i]]);
   activities.sort((a,b) => a[1]-b[1]);

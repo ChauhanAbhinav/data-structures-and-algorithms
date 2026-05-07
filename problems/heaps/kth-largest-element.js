@@ -1,5 +1,5 @@
 // --------------------------
-// 5. Heap / Priority Queue - Kth Largest Element
+// Heap / Priority Queue - Kth Largest Element
 // --------------------------
 class MinHeap {
   constructor() { this.heap = []; }

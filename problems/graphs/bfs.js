@@ -1,5 +1,5 @@
 // --------------------------
-// 2. Graph - BFS
+// Graph - BFS
 // --------------------------
 function bfsGraph(graph, start) {
   let visited = new Set();

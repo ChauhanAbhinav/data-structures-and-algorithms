@@ -1,6 +1,4 @@
-// --------------------------
-// 10. DP on Grid - Unique Paths
-// --------------------------
+// DP on Grid - Unique Paths
 function uniquePaths(m,n){
   let dp=Array.from({length:m},()=>Array(n).fill(1));
   for(let i=1;i<m;i++)
@@ -10,7 +8,3 @@ function uniquePaths(m,n){
 }
 console.log("Unique Paths (3x7):", uniquePaths(3,7));
 // Output: 28
-
-// ==========================
-// File End
-// ==========================

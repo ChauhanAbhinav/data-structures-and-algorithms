@@ -1,6 +1,4 @@
-// --------------------------
-// 1. Trees - Binary Tree Traversals
-// --------------------------
+// Trees - Binary Tree Traversals
 class TreeNode {
   constructor(val) {
     this.val = val;

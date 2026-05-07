@@ -14,7 +14,7 @@ Divide and Conquer is an algorithmic paradigm that **divides a problem into smal
 - Binary Search
 - Maximum subarray problem
 
-## Example (JavaScript - Binary Search)
+## Example (Binary Search - D & D)
 ```js
 function binarySearch(arr, target) {
   let left = 0, right = arr.length - 1;
@@ -27,3 +27,20 @@ function binarySearch(arr, target) {
   return -1;
 }
 console.log(binarySearch([1,2,3,4,5], 4)); // Output: 3
+
+
+// Recursive version
+function binarySearch(arr, target) {
+  let left = 0, right = arr.length - 1;
+    if (left > right) return -1;
+
+    let mid = Math.floor((left + right) / 2);
+
+    if (arr[mid] === target) return mid;
+
+    if (arr[mid] < target) {
+        return binarySearch(arr, target, mid + 1, right);
+    } else {
+        return binarySearch(arr, target, left, mid - 1);
+    }
+}

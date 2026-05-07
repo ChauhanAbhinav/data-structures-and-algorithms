@@ -1,7 +1,7 @@
 # Bubble Sort - Sorting Algorithm in DSA
 
 ## Introduction
-Bubble Sort is a simple **comparison-based sorting algorithm**.  
+Bubble Sort is a simple - Bubble Up the max **comparison-based sorting algorithm**.  
 It repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
 
 ## How it works
@@ -14,6 +14,7 @@ It repeatedly steps through the list, compares adjacent elements, and swaps them
 - Best Case: O(n) (already sorted)
 - Average Case: O(n²)
 - Worst Case: O(n²)
+
 - Space Complexity: O(1)
 
 ## Example (JavaScript)

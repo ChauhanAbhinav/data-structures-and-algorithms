@@ -25,13 +25,23 @@ function mergeSort(arr) {
   return merge(left, right);
 }
 
+
 function merge(left, right) {
-  let result = [];
-  while (left.length && right.length) {
-    if (left[0] < right[0]) result.push(left.shift());
-    else result.push(right.shift());
-  }
-  return result.concat(left, right);
+    let result = [];
+    let i = 0, j = 0;
+
+    while (i < left.length && j < right.length) {
+        if (left[i] < right[j]) {
+            result.push(left[i]);
+            i++;
+        } else {
+            result.push(right[j]);
+            j++;
+        }
+    }
+
+    // add remaining
+    return result.concat(left.slice(i)).concat(right.slice(j));
 }
 
 console.log(mergeSort([5, 2, 9, 1, 5])); // Output: [1, 2, 5, 5, 9]

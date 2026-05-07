@@ -1,6 +1,4 @@
-// --------------------------
-// 8. Union-Find / Disjoint Set - Cycle Detection in Graph
-// --------------------------
+// Union-Find / Disjoint Set - Cycle Detection in Graph
 class UnionFind {
   constructor(n){
     this.parent = Array.from({length:n},(_,i)=>i);
